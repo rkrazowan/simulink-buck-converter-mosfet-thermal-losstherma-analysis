@@ -13,7 +13,7 @@ This repository contains a MATLAB/Simulink (Simscape) model of a Buck Converter 
 
 ## How to Use
 1. Download both the `.slx` and `.m` files into the same MATLAB directory.
-2. Run the Simulink model (`buck_converter_model.slx`).
+2. Run the Simulink model (`ATestSimulatonForAnBuckConverterWithTHeLossCalculation.slx`).
 3. Open the MATLAB Command Window and run the custom function to see the temperature and power loss summary instantly:
    ```matlab
    check_mosfet_stats('MOSFET_Ideal_Switching')
