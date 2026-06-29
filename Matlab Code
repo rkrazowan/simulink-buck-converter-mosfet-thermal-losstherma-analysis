@@ -1,0 +1,9 @@
+temp_data = out.simlog.MOSFET_Ideal_Switching.junction_temperature.series.values('degC');
+ fprintf('\n--- MOSFET Junction Temperature Summary ($^\\circ\\text{C}$) ---\n');
+fprintf('Initial Temperature: %.4f\n', temp_data(1));
+fprintf('End Temperature: %.4f\n', temp_data(end));
+fprintf('Maximum Temperature : %.4f\n', max(temp_data));
+fprintf('Average Temperature: %.4f\n', mean(temp_data));
+fprintf('-------------------------------------------------------\n');
+% for thermal loss or power loss
+mean(out.simlog.MOSFET_Ideal_Switching.power_dissipated.series.values)
